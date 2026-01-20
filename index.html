@@ -1,15 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
+    <title>Ghost of Tsushima</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <alink rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Montserrat&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-    <h1>Hello, World!</h1>
+
+    <header class="hero">
+        <div class="overlay">
+            <h1>Ghost of Tsushima</h1>
+            <p class="subtitle">
+                El camino del samurái. El nacimiento del Fantasma.
+                <span id="sword-btn" title="Invocar al Fantasma">⚔️</span>
+            </p>
+
+            <canvas id="particles"></canvas>
+
+        </div>
+    </header>
+
+    <section class="info">
+        <h2>Historia</h2>
+        <p>
+            Ambientado en el Japón feudal del siglo XIII, <strong>Ghost of Tsushima</strong>
+            narra la historia de Jin Sakai, un samurái que debe romper con las tradiciones
+            para proteger su hogar de la invasión mongola.
+        </p>
+        <img class="imagen-corte" src="https://polvora.com.mx/wp-content/uploads/2020/06/ghost-of-tsushima.jpg"
+            alt="Ghost of Tsushima">
+    </section>
+
+    <section class="video">
+        <h2>Tráiler Oficial</h2>
+        <div class="video-frame">
+            <iframe src="https://www.youtube.com/embed/hQDfGOQxaWQ" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <footer>
+        <p>Fan Page | Ghost of Tsushima © 2026</p>
+    </footer>
+
+    <script src="./js/app.js"></script>
 </body>
 
 </html>

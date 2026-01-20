@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: #0b0b0b;
+    color: #eee;
+}
+
+/* HERO */
+.hero {
+    height: 100vh;
+    background: url("https://via.placeholder.com/1920x1080.png?text=Tsushima+Landscape") center/cover no-repeat;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay h1 {
+    font-family: 'Cinzel', serif;
+    font-size: 4rem;
+    color: #d4af37;
+    letter-spacing: 3px;
+}
+
+.overlay p {
+    margin-top: 15px;
+    font-size: 1.3rem;
+    color: #ccc;
+}
+
+/* SECTIONS */
+section {
+    padding: 80px 10%;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Cinzel', serif;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #d4af37;
+}
+
+.info p {
+    max-width: 800px;
+    margin: auto;
+    line-height: 1.8;
+}
+
+.info img {
+    margin-top: 40px;
+    width: 80%;
+    border-radius: 12px;
+    
+}
+
+/* VIDEO */
+.video-frame {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    max-width: 900px;
+    margin: auto;
+}
+
+.video-frame iframe {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+}
+
+/* ANIMATION */
+.animation {
+    background: radial-gradient(circle, #111, #000);
+}
+
+.subtitle {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+#sword-btn {
+    cursor: pointer;
+    font-size: 1.8rem;
+    transition: transform 0.3s ease, text-shadow 0.3s ease;
+}
+
+#sword-btn:hover {
+    transform: scale(1.2) rotate(-10deg);
+    text-shadow: 0 0 10px #d4af37;
+}
+
+#particles {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.6s ease;
+}
+
+
+canvas {
+    width: 100%;
+    height: 350px;
+    margin-top: 30px;
+}
+
+/* FOOTER */
+footer {
+    padding: 30px;
+    text-align: center;
+    background: #050505;
+    color: #777;
+}
