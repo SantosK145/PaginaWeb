@@ -10,7 +10,7 @@ body {
     color: #eee;
 }
 
-/* HERO */
+/* Hero */
 .hero {
     height: 100vh;
     background: url("https://via.placeholder.com/1920x1080.png?text=Tsushima+Landscape") center/cover no-repeat;
@@ -40,7 +40,7 @@ body {
     color: #ccc;
 }
 
-/* SECTIONS */
+/* Secciones */
 section {
     padding: 80px 10%;
     text-align: center;
@@ -66,7 +66,7 @@ h2 {
     
 }
 
-/* VIDEO */
+/* Video */
 .video-frame {
     position: relative;
     padding-bottom: 56.25%;
@@ -83,7 +83,7 @@ h2 {
     border-radius: 12px;
 }
 
-/* ANIMATION */
+/* Animacion */
 .animation {
     background: radial-gradient(circle, #111, #000);
 }
@@ -121,7 +121,7 @@ canvas {
     margin-top: 30px;
 }
 
-/* FOOTER */
+/* Footer */
 footer {
     padding: 30px;
     text-align: center;
