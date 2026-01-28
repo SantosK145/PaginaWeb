@@ -5,10 +5,15 @@
     <meta charset="UTF-8">
     <title>Ghost of Tsushima</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#d4af37">
+
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Montserrat&display=swap"
         rel="stylesheet">
 </head>
+
 
 <body>
 
@@ -47,7 +52,7 @@
 
         <div class="cards-container">
             <div class="card">
-                <img src="./assets/jin.jpg" alt="Jin Sakai">
+                <img src="./assets/Jin.jpg" alt="Jin Sakai">
                 <h3>Jin Sakai</h3>
                 <p>
                     Un samurái honorable que debe abandonar el código tradicional
@@ -84,11 +89,65 @@
         </div>
     </section>
 
+    <section class="characters">
+        <h2>Personajes Principales</h2>
+
+        <div class="cards-container">
+            <div class="card">
+                <img src="./assets/jin.jpg" alt="Jin Sakai">
+                <h3>Jin Sakai</h3>
+                <p>
+                    Un samurái honorable que debe abandonar el código tradicional
+                    para convertirse en el Fantasma y salvar Tsushima.
+                </p>
+            </div>
+
+            <div class="card">
+                <img src="./assets/yuna.jpg" alt="Yuna">
+                <h3>Yuna</h3>
+                <p>
+                    Una ladrona astuta y valiente que ayuda a Jin a comprender
+                    que el honor no siempre gana guerras.
+                </p>
+            </div>
+
+            <div class="card">
+                <img src="./assets/shimura.jpg" alt="Lord Shimura">
+                <h3>Lord Shimura</h3>
+                <p>
+                    Tío de Jin y líder samurái de Tsushima. Representa
+                    el honor tradicional y el conflicto moral del juego.
+                </p>
+            </div>
+
+            <div class="card">
+                <img src="./assets/ryuzo.jpg" alt="Ryuzo">
+                <h3>Ryuzo</h3>
+                <p>
+                    Antiguo amigo de Jin y líder de los Sombreros de Paja,
+                    atrapado entre la supervivencia y la traición.
+                </p>
+            </div>
+        </div>
+    </section>
+
+
     <footer>
         <p>Fan Page | Ghost of Tsushima © 2026 | JSA</p>
     </footer>
 
     <script src="./js/app.js"></script>
+
+    <script>
+        if ("serviceWorker" in navigator) {
+            window.addEventListener("load", () => {
+                navigator.serviceWorker
+                    .register("./service-worker.js")
+                    .then(reg => console.log("Service Worker registrado", reg))
+                    .catch(err => console.log("Error al registrar SW", err));
+            });
+        }
+    </script>
 </body>
 
 </html>
